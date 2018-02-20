@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>
+            Home
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    The world is your playing ground.
+    <p>
+        If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+    </p>
+
+    <ion-card>
+        <ion-card-header>
+            How awesome is Ionic:
+        </ion-card-header>
+        <ion-item>
+            <ion-range min="0" max="10" [(ngModel)]="fun" color="secondary">
+                <ion-icon range-left name="sad"></ion-icon>
+                <ion-icon range-right name="happy"></ion-icon>
+            </ion-range>
+        </ion-item>
+        <ion-card-content float-right>
+            This awesome: {{fun}}/10
+        </ion-card-content>
+    </ion-card>
+</ion-content>

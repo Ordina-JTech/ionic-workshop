@@ -1,0 +1,52 @@
+.ordina-text {
+    color: #585858;
+}
+
+.ionic-title {
+    font-size: 2rem;
+    color: #585858;
+}
+.ionic-list-small, .ionic-list-large {
+    padding-left: 100px;
+}
+.ionic-list-small li {
+    padding-top: 10px;
+}
+.ionic-list-large li {
+    padding-top: 30px;
+}
+.ionic-large-text {
+    font-size: 1.5rem !important;
+}
+.ionic-footer {
+    border-top: 1px solid lightgray;
+}
+.ionic-footer-text {
+    font-size: 1rem;
+    color: #585858;
+}
+.ionic-app-frame {
+    margin-right: 100px;
+    background-image: url("../assets/phoneframe.png");
+    background-size: 430px 670px;
+}
+.ionic-app-sample {
+    margin-left: 30px;
+    margin-top: 71px;
+    margin-bottom: 90px;
+}
+.ionic-codeblock {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: -2rem;
+}
+
+.ionic-template {
+    /*background-color: aquamarine;*/
+    background-image: url("../assets/back5.jpg");
+    height: 900px;
+    /*background-size: cover;
+    height: 800px;*/
+    /*opacity: 0.3;*/
+}

@@ -1,0 +1,52 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>
+            List
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+        <ion-label>Allow adding items</ion-label>
+        <ion-toggle [(ngModel)]="allowAdding"></ion-toggle>
+    </ion-item>
+    <ion-list>
+        <button ion-item *ngFor="let item of itemList; let i = index">
+            <ion-icon name="{{item.icon}}"></ion-icon>
+            {{item.title}}
+            <span class="item-note" item-right>
+                {{item.note}}
+            </span>
+        </button>
+    </ion-list>
+
+    <div *ngIf="allowAdding">
+        <ion-title>Add new item</ion-title>
+        <ion-list>
+            <ion-item>
+                <ion-label fixed>Name</ion-label>
+                <ion-input [(ngModel)]="name" type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label fixed>Description</ion-label>
+                <ion-input [(ngModel)]="note" type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>Icon</ion-label>
+                <ion-select [(ngModel)]="icon" submitText="Ok" cancelText="Cancel">
+                    <ion-option value="paper-plane">Paper plane</ion-option>
+                    <ion-option value="football">Football</ion-option>
+                    <ion-option value="logo-angular">Angular logo</ion-option>
+                    <ion-option value="attach">Paperclip</ion-option>
+                </ion-select>
+            </ion-item>
+        </ion-list>
+        <div padding>
+            <button ion-button (click)="addItem()">Add item</button>
+        </div>
+    </div>
+</ion-content>

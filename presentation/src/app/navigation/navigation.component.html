@@ -1,0 +1,35 @@
+<div>
+    <!-- Main menu: themes -->
+    <div class="row">
+        <div *ngFor="let theme of themes" class="col-4 navigation-col-themes" (click)="setActiveTheme(theme.title)" [class.active]="theme.active">
+            <p class="lead navigation-link" [class.active]="theme.active">
+                {{theme.title}}
+            </p>
+        </div>
+    </div>
+
+    <!-- Sub menu: topics -->
+    <div class="topics">
+        <div class="row topics-row" [class.active]="themes[0].active">
+            <div *ngFor="let topic of topics[0]" class="col-4" (click)="setActiveTopic(topic.title)">
+                <p class="lead navigation-link" [class.active]="topic.active" *ngIf="themes[0].active">
+                    <span *ngIf="topic.active">></span>{{topic.title}}
+                </p>
+            </div>
+        </div>
+        <div class="row topics-row" [class.active]="themes[1].active">
+            <div *ngFor="let topic of topics[1]" class="col-4" (click)="setActiveTopic(topic.title)">
+                <p class="lead navigation-link" [class.active]="topic.active" *ngIf="themes[1].active">
+                    <span *ngIf="topic.active">></span>{{topic.title}}
+                </p>
+            </div>
+        </div>
+        <div class="row topics-row" [class.active]="themes[2].active">
+            <div *ngFor="let topic of topics[2]" class="col-4"  (click)="setActiveTopic(topic.title)">
+                <p class="lead navigation-link" [class.active]="topic.active" *ngIf="themes[2].active">
+                    <span *ngIf="topic.active">></span>{{topic.title}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

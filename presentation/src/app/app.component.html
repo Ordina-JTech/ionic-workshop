@@ -1,0 +1,64 @@
+<!-- Header -->
+<!--<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <div>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown" dropdown>
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown" dropdownToggle>Dropdown</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown" *dropdownMenu>
+                    <a class="dropdown-item" href="#">Angular</a>
+                    <a class="dropdown-item" href="#">React</a>
+                    <a class="dropdown-item" href="#">Vue.js</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>-->
+
+<header-component></header-component>
+
+<!-- Main -->
+<div class="ionic-template">
+    <div class="container ionic-main">
+        <navigation-component (setTopic)="setTopic($event)"></navigation-component>
+        <div>
+            <topic11-component *ngIf="topic === 'What is Ionic'"></topic11-component>
+            <app-topic12 *ngIf="topic === 'Framework Architecture'"></app-topic12>
+            <app-topic13 *ngIf="topic === 'Strengths and Use Cases'"></app-topic13>
+            <app-topic21 *ngIf="topic === 'Getting started'"></app-topic21>
+            <app-topic31 *ngIf="topic === 'Demo 2'"></app-topic31>
+            <app-topic32 *ngIf="topic === 'Demo 3'"></app-topic32>
+            <app-topic33 *ngIf="topic === 'Demo 4'"></app-topic33>
+        </div>
+    </div>
+</div>
+<div class="container ionic-footer">
+    <span class="lead ionic-footer-text">Kevin Donkers&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Jeroen Verhoeven</span>
+</div>
+
+<!--<div class="container ionic-main">
+    <navigation-component (setTopic)="setTopic($event)"></navigation-component>
+    <div>
+        <topic11-component *ngIf="topic === 'What is Ionic'"></topic11-component>
+        <app-topic12 *ngIf="topic === 'Framework Architecture'"></app-topic12>
+        <app-topic13 *ngIf="topic === 'Strengths and Use Cases'"></app-topic13>
+        <app-topic21 *ngIf="topic === 'Getting started'"></app-topic21>
+
+
+        &lt;!&ndash;<h1 class="display-4">Bootstrap starter template</h1>
+        <p class="lead ordina-text">
+            Use this document as a way to quickly start any new project.<br> All you get is this text and a
+            mostly barebones HTML document.
+            This is the topic: {{topic}}.
+        </p>&ndash;&gt;
+    </div>
+    &lt;!&ndash;<app-menu-toggle></app-menu-toggle>&ndash;&gt;
+</div>-->
+
+
+
