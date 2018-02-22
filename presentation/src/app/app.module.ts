@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { BsDropdownModule, CollapseModule } from 'ngx-bootstrap';
+import { BsDropdownModule, ModalModule, CollapseModule } from 'ngx-bootstrap';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -14,6 +14,8 @@ import { Topic21Component } from './topics/topic21/topic21.component';
 import { Topic31Component } from './topics/topic31/topic31.component';
 import { Topic32Component } from './topics/topic32/topic32.component';
 import { Topic33Component } from './topics/topic33/topic33.component';
+import { Topic34Component } from './topics/topic34/topic34.component';
+import { Topic22Component } from './topics/topic22/topic22.component';
 
 @NgModule({
     declarations: [
@@ -27,12 +29,15 @@ import { Topic33Component } from './topics/topic33/topic33.component';
         Topic21Component,
         Topic31Component,
         Topic32Component,
-        Topic33Component
+        Topic33Component,
+        Topic34Component,
+        Topic22Component
     ],
     imports: [
         BrowserModule,
         BsDropdownModule.forRoot(),
-        CollapseModule.forRoot()
+        CollapseModule.forRoot(),
+        ModalModule.forRoot()
     ],
     providers: [],
     bootstrap: [AppComponent]

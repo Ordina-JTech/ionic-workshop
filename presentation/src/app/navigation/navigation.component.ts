@@ -23,9 +23,11 @@ export class NavigationComponent {
                 {title: 'Strengths and Use Cases', active: false}
             ],
             [
-                {title: 'Getting started', active: false}
+                {title: 'Getting started', active: false},
+                {title: 'MyApp', active: false}
             ],
             [
+                {title: 'Hands on', active: false},
                 {title: 'Demo 2', active: false},
                 {title: 'Demo 3', active: false},
                 {title: 'Demo 4', active: false}

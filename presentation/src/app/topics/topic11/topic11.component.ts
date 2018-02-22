@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, TemplateRef } from '@angular/core';
+import { BsModalService } from 'ngx-bootstrap';
+import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
 
 @Component({
     selector: 'topic11-component',
@@ -6,5 +8,15 @@ import { Component } from '@angular/core';
     styleUrls: ['topic11.component.scss', '../../app.component.css']
 })
 export class Topic11Component {
-    constructor() {}
+
+    /*modalRef: BsModalRef;
+
+    showNative: boolean;*/
+
+    constructor() {
+    }
+
+    /*openModal(template: TemplateRef<any>) {
+        this.modalRef = this.modalService.show(template);
+    }*/
 }
